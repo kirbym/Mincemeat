@@ -1,4 +1,3 @@
-import numpy as np
 #!/usr/bin/env python
 import mincemeat
 
@@ -24,11 +23,9 @@ datasource = dict(enumerate(data))
 
 
 def mapfn(k, v):
-     import numpy as np
-     import math
      for num in v:
        if(str(num) == str(num)[::-1]):
-          print num
+          #print num
           yield "Primes", num
           
     	      
